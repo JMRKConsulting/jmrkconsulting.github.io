@@ -1,0 +1,38 @@
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', sans-serif;
+}
+
+.page-section {
+    height: 100vh;
+    padding: 70px 2% 2% 2%;
+    /* add padding for navbar */
+}
+
+#home {
+    background: url(../images/Lisbon.jpg) center center fixed no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+.navbar-header {
+    min-height: 70px;
+}
+
+#home>h1 {
+    color: white;
+}
+
+.navbar {
+    min-height: 70px !important;
+}
+
+#navbar-image {
+    height: 40px;
+    width: 40px;
+}
+
+.navbar-right {
+    padding-top: 10px;
+}
