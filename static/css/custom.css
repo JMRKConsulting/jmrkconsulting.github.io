@@ -20,6 +20,7 @@ section,
     overflow: hidden;
     font-family: 'Open Sans', sans-serif;
     display: block;
+    overflow-y: scroll;
 }
 
 section {
@@ -189,7 +190,7 @@ a {
 }
 
 .contents {
-    padding-left: 10%; !important
+    padding-left: 12%; !important
     padding-right: 10%; !important
 }
 
