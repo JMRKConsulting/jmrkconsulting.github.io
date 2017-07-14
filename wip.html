@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+    <title>JMRK Consulting</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width-device-width, initial-scale=1">
+
+    <!--CSS-->
+    <!--Custom CSS-->
+    <link href="static/css/custom_wip.css" rel="stylesheet">
+    <!--Bootstrap-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!--Open Sans Font-->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet">
+
+    <!--Scripts-->
+    <!--TO CHANGE: LOAD JS ON PAGE LOAD-->
+    <!--JQuery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!--Bootstrap-->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous" async></script>
+    <script async>
+        $(document).ready(function() {
+            $("html,body").animate({
+                scrollTop: 0
+            }, 100);
+            var height = $(window).height();
+            $(window).scroll(function() {
+                var s = $(window).scrollTop();
+                // scroll value and opacity
+                opacityVal = (s / (height / 3));
+                // opacity value 0% to 100%
+                if (opacityVal <= 1.2) {
+                    $('.blurred-img').css('opacity', opacityVal);
+                    $('.intro').css('opacity', 1 - opacityVal);
+                }
+                if (opacityVal >= 0.8 && opacityVal <= 2) {
+                    $('.vision').css('opacity', (opacityVal - 0.8) ** 0.4);
+                }
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button id="nav-button" type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">
+                    <img alt="JMRK" src="static/images/favicon.png" id="navbar-image">
+                </a>
+            </div>
+
+            <div class="collapse navbar-collapse navbar-right" id="navbar-menu">
+                <ul class="nav navbar-nav">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div id="blurred-image-container">
+        <div class="img-src" style="background-image:url('static/images/LisbonSquare.jpg')"></div>
+        <div class="img-src blurred-img" style="background-image:url('static/images/LisbonSquareBlurred.jpg')"></div>
+    </div>
+    <div class="article">
+        <div class="intro-section">
+            <h1 class="intro">JMRK Consulting Group</h1>
+        </div>
+        <div class="vision-section">
+            <p class="vision">JMRK Consulting's mission is two pronged: to identify growth opportunities for our clients and to assist management through challenging situations. We combine theoretical knowledge with real-world experience to deliver holistic solutions to
+                our clients at a low cost. Target customers are startups, small businesses, and firms with limited excess capital.
+            </p>
+        </div>
+        <div class="team-section">
+            <h2>Leadership</h2>
+            <div class="col-md-3 headshot portfolio-item"><img src="static/images/Headshot_John.jpg" alt="John Headshot" class="img-responsive"></div>
+            <div class="col-md-3 headshot portfolio-item"><img src="static/images/Headshot_Kaan.jpg" alt="Kaan Headshot" class="img-responsive"></div>
+            <div class="col-md-3 headshot portfolio-item"><img src="static/images/Headshot_Amit.jpg" alt="Amit Headshot" class="img-responsive"></div>
+            <div class="col-md-3 headshot portfolio-item"><img src="static/images/Headshot_Richard.jpg" alt="Richard Headshot" class="img-responsive"></div>
+            <div class="col-md-3 text-center">
+                <p>John Kim</p>
+            </div>
+            <div class="col-md-3 text-center">
+                <p>Kaan Aykac</p>
+            </div>
+            <div class="col-md-3 text-center">
+                <p>Amit Iyer</p>
+            </div>
+            <div class="col-md-3 text-center">
+                <p>Richard Hamrick</p>
+            </div>
+            <div class="col-md-3 text-center">
+                <p><i>Computer Science, Mathematics</i></p>
+            </div>
+            <div class="col-md-3 text-center">
+                <p><i>Economics</i></p>
+            </div>
+            <div class="col-md-3 text-center">
+                <p><i>Economics, Mathematics</i></p>
+            </div>
+            <div class="col-md-3 text-center">
+                <p><i>Economics, European History</i></p>
+            </div>
+        </div>
+    </div>
+</body>
+
+
+
+</html>
