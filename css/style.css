@@ -152,6 +152,7 @@ medium {
 .cd-half-block p {
     font-size: 1.8rem;
     line-height: 1.8;
+    text-align: justify;
 }
 
 .cd-section:nth-of-type(2) .cd-half-block:first-of-type {
@@ -189,7 +190,7 @@ medium {
         -o-transform: translateX(-50%) translateY(-50%);
         transform: translateX(-50%) translateY(-50%);
         width: 100%;
-        padding: 0 30%;
+        padding: 0 20%;
         font-size: 2.4rem;
     }
     .cd-section:nth-of-type(even) .cd-half-block:first-of-type,
