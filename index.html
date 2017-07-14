@@ -8,10 +8,13 @@
 
     <!--Open Sans Font-->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet">
+    <!--External-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <!--CSS-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="static/css/custom.css" rel="stylesheet">
     <script type="text/javascript">
         $(document).ready(function() {
             $("#myModal").modal('show');
@@ -30,20 +33,15 @@
             });
         })(jQuery);
     </script>
-
-    <!--Custom CSS-->
-    <link href="static/css/custom.css" rel="stylesheet">
 </head>
 
 <body>
-    <!--    nav bar-->
-    
     <div id="myModal" class="modal fade">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                    <h4 class="modal-title">This site is under construction!</h4>
+                    <h4 class="modal-title">This site is under construction.</h4>
                 </div>
                 <div class="modal-body">
                     <p><br>We apologize for the inconvenience.</p>
@@ -51,10 +49,122 @@
             </div>
         </div>
     </div>
-    <div class='page-section' id='front-page'>
-        <a href='#'>
-            <img alt='arrow' src='static/images/arrow.png' id='arrow' class='bounce'>
-        </a>
+
+
+    <!--navigation & page design by Albert Hartzet @ https://codepen.io/hrtzt-->
+    <div class="ct" id="t1">
+        <div class="ct" id="t2">
+            <div class="ct" id="t3">
+                <div class="ct" id="t4">
+                    <section>
+                        <ul>
+                            <a href="#t1">
+                                <li class="icon fa fa-home" id="uno"></li>
+                            </a>
+                            <a href="#t2">
+                                <li class="icon fa fa-handshake-o" id="dos"></li>
+                            </a>
+                            <a href="#t3">
+                                <li class="icon fa fa-users" id="tres"></li>
+                            </a>
+                            <a href="#t4">
+                                <li class="icon fa fa-address-book-o" id="cuatro"></li>
+                            </a>
+                        </ul>
+                        <div class="page" id="p1">
+                            <li class="row">
+                                <div class="contents">
+                                    <h1>Welcome.</h1>
+                                    <p class="desc">
+                                        JMRK Consulting’s mission is two pronged: to identify growth opportunities for our clients and to assist management through challenging situations. We combine theoretical knowledge with real-world experience to deliver holistic solutions to our clients at a low cost.
+                                    </p>
+                                </div>
+                            </li>
+                        </div>
+                        <div class="page" id="p2">
+                            <li class="row">
+                                <div class="contents">
+                                    <h2>What we do.</h2>
+                                    <div class="subcontents">
+                                        <p class="blurb">
+                                            Current consulting solutions are immensely expensive. It often places an unbearable burden for the businesses that can afford them, and those that cannot must fend for themselves with a small talent pool, limited funds, and an insider’s perspective.
+                                        </p>
+                                        <p class="blurb"><br>Business challenges are students’ opportunities. As Vanderbilt University students, we have taken rigorous coursework and understand the theory behind business, and this is an invaluable opportunity to apply our academia. In addition, every consultant at JMRK has real-world experience and a passion for consulting. From our talent pool, we provide objective, low cost, high level strategy for our clients. Target customers are startups, small businesses, and firms with limited excess capital.</p>
+                                        <!--add icons for services (strategy, marketing)-->
+                                    </div>
+                                </div>
+                            </li>
+                        </div>
+                        <div class="page" id="p3">
+                            <li class="row">
+                                <div class="contents">
+                                    <h2>Meet the team.</h2>
+                                    <p>
+                                        <large>The KPMG International Case Competition 2017 National Champions</large>
+                                    </p>
+                                    <ol id='piclist'>
+                                        <li>
+                                            <figure>
+                                                <img src='static/images/Headshot_John.jpg' alt='john' class='headshot'>
+                                                <figcaption>
+                                                    <large>John Kim</large><br>
+                                                    <med><i>Computer Science and Mathematics</i></med>
+                                                </figcaption>
+                                            </figure>
+                                        </li>
+                                        <li>
+
+                                            <figure>
+                                                <img src='static/images/Headshot_Amit.jpg' alt='amit' class='headshot'>
+                                                <figcaption>
+                                                    <large>Amit Iyer</large><br>
+                                                    <med><i>Economics and Mathematics</i></med>
+                                                </figcaption>
+                                            </figure>
+                                        </li>
+                                        <li>
+                                            <figure>
+                                                <img src='static/images/Headshot_Richard.jpg' alt='rich' class='headshot'>
+                                                <figcaption>
+                                                    <large>Richard Hamrick</large><br>
+                                                    <med><i>Economics and European History</i></med>
+                                                </figcaption>
+                                            </figure>
+                                        </li>
+                                        <li>
+                                            <figure>
+                                                <img src='static/images/Headshot_Kaan.jpg' alt='kaan' class='headshot'>
+                                                <figcaption>
+                                                    <large>Kaan Aykac</large><br>
+                                                    <med><i>Economics</i></med>
+                                                </figcaption>
+                                            </figure>
+                                        </li>
+                                    </ol>
+                                </div>
+                            </li>
+                        </div>
+                        <div class="page" id="p4">
+                            <li class="row">
+                                <div class="contents">
+                                    <h2>Work with us.</h2>
+                                    <div class="subcontents">
+                                        <p class="blurb">
+                                            JMRK Consulting’s mission is two pronged: to identify growth opportunities for our clients and to assist management through challenging situations. We combine theoretical knowledge with real-world experience to deliver holistic solutions to our clients at a low cost.
+                                        </p>
+                                        <p class="quote">
+                                            “JMRK brings incredible work ethic, a contagious optimism, and the ability to grasp all the key strategic components of a business and its marketing. ey far exceeded my expectations, and I look forward to working with them again.” Dr. John Nay CEO of Skopos Lab
+                                        </p>
+                                    </div>
+
+                                </div>
+                            </li>
+                        </div>
+                    </section>
+
+                </div>
+            </div>
+        </div>
     </div>
 
 </body>
