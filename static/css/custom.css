@@ -269,6 +269,8 @@ med {
 
 .quote {
     padding: 2% 20% 0 0;
+    font-size: 2em;
+    text-align: justify;
 }
 
 .contents p large {
