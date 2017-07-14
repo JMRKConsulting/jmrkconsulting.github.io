@@ -1,8 +1,6 @@
 * {
-/*
     transition: all 500ms ease-out;
     -webkit-transition: all 500ms ease-out;
-*/
 }
 
 html,
@@ -136,15 +134,6 @@ ul li {
 a {
     text-decoration: none;
     font-family: open sans, sans-serif;
-}
-
-.hint a {
-    color: #EFFF06;
-    transition: all 250ms easet-out;
-}
-
-.hint a:hover {
-    color: #FFF;
 }
 
 .page .icon {
