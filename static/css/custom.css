@@ -1,6 +1,8 @@
 * {
-    transition: all 500ms ease-out;
     -webkit-transition: all 500ms ease-out;
+    -moz-transition: all 500ms ease-out;
+    -o-transition: all 500ms ease-out;
+    transition: all 500ms ease-out;
 }
 
 html,
