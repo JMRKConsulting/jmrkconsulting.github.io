@@ -1,72 +1,118 @@
 <!doctype html>
 <html lang="en" class="no-js">
 <head>
-    <!-- curtain template obtained from CodyHouse https://codyhouse.co -->
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Template from CodyHouse -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<link href='http://fonts.googleapis.com/css?family=Slabo+27px' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Vollkorn|Open+Sans:400,700' rel='stylesheet' type='text/css'>
 
-	<link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
-	<link rel="stylesheet" href="css/style.css"> <!-- Resource style -->
-	<script src="js/modernizr.js"></script> <!-- Modernizr -->
-  	
-	<title>JMRK Consulting</title>
+    <!--External-->
+    <!--Bootstrap-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <script src="js/main.js"></script>
+    <!-- Resource jQuery -->
+    
+    <!--CSS-->
+    <link href="static/css/custom.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/reset.css">
+    <!-- CSS reset -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Resource style -->
+    <script src="js/modernizr.js"></script>
+    <!-- Modernizr -->
+
+    <title>JMRK Consulting</title>
+    
+    <script type="text/javascript">
+         $(document).ready(function() {
+             $("#myModal").modal('show');
+         });
+    </script>
 </head>
+
 <body>
-	<section class="cd-section">
-		<div class="cd-block">
-		</div>
-	</section> <!-- .cd-section -->
+    <div id="myModal" class="modal fade">
+         <div class="modal-dialog">
+             <div class="modal-content">
+                 <div class="modal-header">
+                     <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                     <h4 class="modal-title">This site is under construction.</h4>
+                 </div>
+                 <div class="modal-body">
+                     <p><br>We apologize for the inconvenience.</p>
+                 </div>
+             </div>
+         </div>
+     </div>
 
-	<section class="cd-section">
-		<div class="cd-block">
-			<div class="cd-half-block">
-            </div>
+    <main class="cd-main">
+        <div class='page-section' id='front-page'>
+            
+        </div>
+        <ul class="cd-gallery">
+            <li class="cd-item">
+                <a href="item-1.html">
+                    <div>
+                        <h2>Our Story</h2>
+                        <p>BNA > LGA > LIS > JMRK</p>
+                        <b>View More</b>
+                    </div>
+                </a>
+            </li>
 
-			<div class="cd-half-block">
-				<p>
-                    <large>What do we do?</large><br><br>
-                    Our mission is two pronged: to identify growth opportunities for our clients and to assist management through challenging situations. We combine theoretical knowledge with real-world experience to deliver holistic solutions to our clients at a low cost.
-				</p>
-			</div>
-		</div>
-	</section> <!-- .cd-section -->
+            <li class="cd-item">
+                <a href="item-2.html">
+                    <div>
+                        <h2>Services</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur.</p>
+                        <b>View More</b>
+                    </div>
+                </a>
+            </li>
 
-	<section class="cd-section">
-		<div class="cd-block">
-			<div class="cd-half-block"></div>
+            <li class="cd-item">
+                <a class="dark-text" href="item-3.html">
+                    <div>
+                        <h2>Team</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur.</p>
+                        <b>View More</b>
+                    </div>
+                </a>
+            </li>
 
-			<div class="cd-half-block">
-				<p>
-                    <large>Why do we do it?</large><br><br>
-                    Current consulting solutions are expensive. They often place an unbearable burden for the businesses that can afford them, and
-those that cannot must fend for themselves with a small talent pool, limited funds,
-and an insider’s perspective.
-				</p>
-			</div>
-		</div>
-	</section> <!-- .cd-section -->
+            <li class="cd-item">
+                <a href="item-4.html">
+                    <div>
+                        <h2>Contact</h2>
+                        <p>Work with us.</p>
+                        <b>View More</b>
+                    </div>
+                </a>
+            </li>
+        </ul>
+        <!-- .cd-gallery -->
+    </main>
+    <!-- .cd-main -->
 
-	<section class="cd-section">
-		<div class="cd-block">
-			<div class="cd-half-block"></div>
+    <div class="cd-folding-panel">
 
-			<div class="cd-half-block">
-				<p>
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores eos labore ratione illum excepturi neque sunt blanditiis ducimus soluta quae!
-				</p>
-			</div>
-		</div>
-	</section> <!-- .cd-section -->
+        <div class="fold-left"></div>
+        <!-- this is the left fold -->
 
-	<nav>
-		<ul class="cd-vertical-nav">
-			<li><a href="#0" class="cd-prev inactive">Next</a></li>
-			<li><a href="#0" class="cd-next">Prev</a></li>
-		</ul>
-	</nav> <!-- .cd-vertical-nav -->
-<script src="js/jquery-2.1.1.js"></script>
-<script src="js/main.js"></script> <!-- Resource jQuery -->
+        <div class="fold-right"></div>
+        <!-- this is the right fold -->
+
+        <div class="cd-fold-content">
+            <!-- content will be loaded using javascript -->
+        </div>
+
+        <a class="cd-close" href="#0"></a>
+    </div>
+    <!-- .cd-folding-panel -->
 </body>
 </html>
