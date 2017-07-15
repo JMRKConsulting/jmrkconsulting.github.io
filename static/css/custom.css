@@ -8,7 +8,7 @@ body {
 }
 
 #front-page {
-    background: url('../images/JMRK_cropped.jpg') center center no-repeat;
+    background: url('../images/JMRK%20vertical.jpg') center center no-repeat;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -91,6 +91,16 @@ h1 {
     }
     60% {
         transform: translateY(-15px);
+    }
+}
+
+@media only screen and (min-width: 800px) {
+    #front-page {
+        background: url('../images/JMRK_cropped.jpg') center center no-repeat;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        background-size: cover;
+        -o-background-size: cover;
     }
 }
 
