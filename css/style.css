@@ -458,7 +458,7 @@ folding panel
 }
 
 .bio {
-    height: 500px;
+    padding-bottom: 10%;
 }
 
 .frame img {
@@ -470,11 +470,17 @@ folding panel
     margin-bottom: 2%;
 }
 
+@media only screen and (min-width: 500px) {
+    .bio {
+        padding-bottom: 10%;
+        height: 500px;
+    }
+}
 
 @media only screen and (min-width: 600px) {
     .cd-folding-panel {
         width: 600px;
-    }
+    }   
 }
 
 @media only screen and (min-width: 1100px) {
@@ -556,7 +562,7 @@ folding panel
 }
 
 .cd-fold-content h2 {
-    font-size: 2.4rem;
+    font-size: 4rem;
     -webkit-transition: -webkit-transform 0.2s 0.2s, opacity 0.2s 0.2s;
     -moz-transition: -moz-transform 0.2s 0.2s, opacity 0.2s 0.2s;
     transition: transform 0.2s 0.2s, opacity 0.2s 0.2s;
@@ -571,7 +577,7 @@ folding panel
     display: inline-block;
     margin: 1em 0;
     font-family: "Vollkorn", serif;
-    font-size: 4rem;
+    font-size: 2.4rem;
     color: #7a78ae;
     -webkit-transition: -webkit-transform 0.2s 0.1s, opacity 0.2s 0.1s;
     -moz-transition: -moz-transform 0.2s 0.1s, opacity 0.2s 0.1s;
@@ -580,7 +586,7 @@ folding panel
 
 .cd-fold-content p {
     margin-bottom: 1em;
-    font-size: 1.4rem;
+    font-size: 1.8rem;
     -webkit-transition: -webkit-transform 0.2s 0s, opacity 0.2s 0s;
     -moz-transition: -moz-transform 0.2s 0s, opacity 0.2s 0s;
     transition: transform 0.2s 0s, opacity 0.2s 0s;
@@ -678,4 +684,3 @@ Javascript disabled
     -o-transform: translateY(0);
     transform: translateY(0);
 }
-
