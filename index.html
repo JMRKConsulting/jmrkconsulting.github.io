@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="en" class="no-js">
+
 <head>
     <!-- Template from CodyHouse -->
     <meta charset="UTF-8">
@@ -15,7 +16,7 @@
 
     <script src="js/main.js"></script>
     <!-- Resource jQuery -->
-    
+
     <!--CSS-->
     <link href="static/css/custom.css" rel="stylesheet">
 
@@ -27,78 +28,110 @@
     <!-- Modernizr -->
 
     <title>JMRK Consulting - A Student Run Management Consulting Group</title>
-    
+
+    <!-- modal -->
     <script type="text/javascript">
-         $(document).ready(function() {
-             $("#myModal").modal('show');
-         });
+        $(document).ready(function() {
+            $("#myModal").modal('show');
+        });
+    </script>
+    <!-- smooth scrolling for anchor links -->
+    <script>
+        window.smoothScroll = function(target) {
+            var scrollContainer = target;
+            do { //find scroll container
+                scrollContainer = scrollContainer.parentNode;
+                if (!scrollContainer) return;
+                scrollContainer.scrollTop += 1;
+            } while (scrollContainer.scrollTop == 0);
+
+            var targetY = 0;
+            do { //find the top of target relatively to the container
+                if (target == scrollContainer) break;
+                targetY += target.offsetTop;
+            } while (target = target.offsetParent);
+
+            scroll = function(c, a, b, i) {
+                i++;
+                if (i > 30) return;
+                c.scrollTop = a + (b - a) / 30 * i;
+                setTimeout(function() {
+                    scroll(c, a, b, i);
+                }, 20);
+            }
+            // start scrolling
+            scroll(scrollContainer, scrollContainer.scrollTop, targetY, 0);
+        }
     </script>
 </head>
 
 <body>
     <div id="myModal" class="modal fade">
-         <div class="modal-dialog">
-             <div class="modal-content">
-                 <div class="modal-header">
-                     <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                     <h4 class="modal-title">This site is under construction.</h4>
-                 </div>
-                 <div class="modal-body">
-                     <p><br>We apologize for the inconvenience.</p>
-                 </div>
-             </div>
-         </div>
-     </div>
-
-    <main class="cd-main">
-        <div class='page-section' id='front-page'>
-            
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title">This site is under construction.</h4>
+                </div>
+                <div class="modal-body">
+                    <p><br>We apologize for the inconvenience.</p>
+                </div>
+            </div>
         </div>
-        <ul class="cd-gallery">
-            <li class="cd-item">
-                <a href="item-1.html">
-                    <div>
-                        <h2>Our Story</h2>
-                        <p>BNA > LGA > LIS > JMRK</p>
-                        <b>View More</b>
-                    </div>
-                </a>
-            </li>
+    </div>
+    <div class='page-section' id='front-page'>
+        <!--arrow obtained from https://codepen.io/nxworld/pen/OyRrGy-->
+        <section id="arrow" class="demo" onclick="smoothScroll(document.getElementById('nav-page'))">
+            <a href="#nav-page"><span></span><span></span><span></span></a>
+        </section>
+    </div>
+    <div class='page-section' id='nav-page'>
+        <main class="cd-main">
+            <ul class="cd-gallery">
+                <li class="cd-item">
+                    <a href="item-1.html">
+                        <div>
+                            <h2>Our Story</h2>
+                            <p>BNA > LGA > LIS > JMRK</p>
+                            <b>View More</b>
+                        </div>
+                    </a>
+                </li>
 
-            <li class="cd-item">
-                <a href="item-2.html">
-                    <div>
-                        <h2>Services</h2>
-                        <p>What can we do for you?</p>
-                        <b>View More</b>
-                    </div>
-                </a>
-            </li>
+                <li class="cd-item">
+                    <a href="item-2.html">
+                        <div>
+                            <h2>Services</h2>
+                            <p>What can we do for you?</p>
+                            <b>View More</b>
+                        </div>
+                    </a>
+                </li>
 
-            <li class="cd-item">
-                <a class="dark-text" href="item-3.html">
-                    <div>
-                        <h2>Team</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur.</p>
-                        <b>View More</b>
-                    </div>
-                </a>
-            </li>
+                <li class="cd-item">
+                    <a class="dark-text" href="item-3.html">
+                        <div>
+                            <h2>Team</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur.</p>
+                            <b>View More</b>
+                        </div>
+                    </a>
+                </li>
 
-            <li class="cd-item">
-                <a href="item-4.html">
-                    <div>
-                        <h2>Contact</h2>
-                        <p>Work with us.</p>
-                        <b>View More</b>
-                    </div>
-                </a>
-            </li>
-        </ul>
-        <!-- .cd-gallery -->
-    </main>
-    <!-- .cd-main -->
-
+                <li class="cd-item">
+                    <a href="item-4.html">
+                        <div>
+                            <h2>Contact</h2>
+                            <p>Work with us.</p>
+                            <b>View More</b>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+            <!-- .cd-gallery -->
+        </main>
+        <!-- .cd-main -->
+    </div>
     <div class="cd-folding-panel">
 
         <div class="fold-left"></div>
@@ -115,4 +148,5 @@
     </div>
     <!-- .cd-folding-panel -->
 </body>
+
 </html>

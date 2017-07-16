@@ -457,6 +457,10 @@ folding panel
     transition: opacity 0.2s 0.5s;
 }
 
+.bio {
+    height: 500px;
+}
+
 .frame img {
     display: block;
     float: left;
@@ -567,7 +571,7 @@ folding panel
     display: inline-block;
     margin: 1em 0;
     font-family: "Vollkorn", serif;
-    font-size: 3rem;
+    font-size: 4rem;
     color: #7a78ae;
     -webkit-transition: -webkit-transform 0.2s 0.1s, opacity 0.2s 0.1s;
     -moz-transition: -moz-transform 0.2s 0.1s, opacity 0.2s 0.1s;
